@@ -1,0 +1,8 @@
+@import url('./main-layout.css');
+@import url('./views/about-view.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+@import url('@fontsource/source-code-pro');    html {
+      --lumo-border-radius: 0px;
+--lumo-font-family: Source Code Pro;
+
+    }
