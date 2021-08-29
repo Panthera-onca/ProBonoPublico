@@ -22,14 +22,6 @@ export const views: ViewRoute[] = [
     icon: 'la la-chart-area',
     title: 'About',
   },
-  {
-   path: 'dashboard',
-   component: 'dashboard-view',
-   title: 'Dashboard',
-   action: async () => {
-     await import('./views/dashboard/dashboard-view');
-   },
-   },
 ];
 export const routes: ViewRoute[] = [
   {

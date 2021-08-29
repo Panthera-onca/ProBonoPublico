@@ -2,22 +2,22 @@ package com.example.application.views.about;
 
 import java.time.LocalDate;
 
-import com.vaadin.fusion.Nonnull;
+import javax.validation.constraints.NotNull;
 
 /**
  * Simple DTO class for the inbox list to demonstrate complex object data
  */
 public class HealthGridItem {
 
-    @Nonnull
+	@NotNull
     private LocalDate date;
-    @Nonnull
+	@NotNull
     private String city;
-    @Nonnull
+	@NotNull
     private String country;
-    @Nonnull
+	@NotNull
     private String status;
-    @Nonnull
+	@NotNull
     private String theme;
 
     public HealthGridItem() {
