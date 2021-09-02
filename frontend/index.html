@@ -16,6 +16,14 @@
       }
     </style>
     <!-- index.ts is included here automatically (either by the dev server or during the build) -->
+    <script src="webcomponents/webcomponents-loader.js"></script>
+    <script>
+      if (!window.customElements) {
+        document.write('<!--');
+      }
+    </script>
+    <script src="webcomponents/custom-elements-es5-adapter.js"></script>
+    <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
   </head>
 
   <body>

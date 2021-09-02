@@ -1,6 +1,10 @@
 {
   "license": "UNLICENSED",
   "name": "no-name",
+  "scripts": {
+    "dev": "webpack-dev-server --env.mode development",
+    "prod": "webpack --env.mode production"
+  },
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0-rc.4",
     "@fontsource/source-code-pro": "4.5.0",
