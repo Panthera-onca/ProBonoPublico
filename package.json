@@ -1,10 +1,6 @@
 {
   "license": "UNLICENSED",
   "name": "no-name",
-  "scripts": {
-    "dev": "webpack-dev-server --env.mode development",
-    "prod": "webpack --env.mode production"
-  },
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0-rc.4",
     "@fontsource/source-code-pro": "4.5.0",
@@ -103,16 +99,16 @@
     "loader-utils": "2.0.0",
     "rollup-plugin-lit-css": "^2.1.0",
     "ts-loader": "8.0.12",
-    "typescript": "4.0.3",
+    "typescript": "4.2.3",
     "validator": "13.1.17",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.11.0",
     "webpack-manifest-plugin": "3.0.0",
     "webpack-merge": "4.2.2",
-    "workbox-core": "5.1.4",
-    "workbox-precaching": "5.1.4",
-    "workbox-webpack-plugin": "5.1.4"
+    "workbox-core": "6.1.0",
+    "workbox-precaching": "6.1.0",
+    "workbox-webpack-plugin": "6.1.0"
   },
   "vaadin": {
     "dependencies": {
@@ -201,16 +197,16 @@
       "lit-css-loader": "0.0.4",
       "loader-utils": "2.0.0",
       "ts-loader": "8.0.12",
-      "typescript": "4.0.3",
+      "typescript": "4.2.3",
       "validator": "13.1.17",
       "webpack": "4.46.0",
       "webpack-cli": "3.3.11",
       "webpack-dev-server": "3.11.0",
       "webpack-manifest-plugin": "3.0.0",
       "webpack-merge": "4.2.2",
-      "workbox-core": "5.1.4",
-      "workbox-precaching": "5.1.4",
-      "workbox-webpack-plugin": "5.1.4"
+      "workbox-core": "6.1.0",
+      "workbox-precaching": "6.1.0",
+      "workbox-webpack-plugin": "6.1.0"
     },
     "hash": "be4ec3cd789322763271eda1b77a98397c1c50686bf9534eb46bd4ebe1e92137"
   }

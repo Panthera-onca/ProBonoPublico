@@ -1,14 +1,14 @@
 import { View } from '../view';
 import "@vaadin/vaadin-charts/src/vaadin-chart-series";
 import { customElement, html, state } from "lit-element";
-
 import "@vaadin/vaadin-charts";
+
 
 @customElement("client-side-view-displaying-live-data")
 export class ResponseView extends View {
 
   @state()
-  private ticker = "AGREEMENT";
+  private ticker = "APPROVAL";
   @state()
   private currentApproval = "";
   @state()
@@ -38,7 +38,7 @@ export class ResponseView extends View {
 
     // Connect to the backend
     const approvalSource = new EventSource(
-      `${window.location.origin}/stock-price`
+      `${window.location.origin}/approval`
     );
 
     // Listen for incoming data and update state

@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux;
 @RestController
 public class DataEndpoint {
 	
-	@GetMapping(path = "/status", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+	@GetMapping(path = "/approval", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> getIndicators() {
         Random random = new Random();
         return Flux

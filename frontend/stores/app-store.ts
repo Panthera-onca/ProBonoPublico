@@ -1,12 +1,12 @@
 import { RouterLocation } from '@vaadin/router';
 import { makeAutoObservable } from 'mobx';
 import { UiStore } from "./uiStore";
-import { CrmStore } from "./crmStore";
+import { ApprovalStore } from "./approvalStore";
 
 export class AppStore {
   applicationName = 'My App';
   uiStore = new UiStore();
-  crmStore = new CrmStore();
+  approvalStore = new ApprovalStore();
 
   // The location, relative to the base path, e.g. "hello" when viewing "/hello"
   location = '';
@@ -30,4 +30,4 @@ export class AppStore {
 }
 export const appStore = new AppStore();
 export const uiStore = appStore.uiStore;
-export const crmStore = appStore.crmStore;
+export const approvalStore = appStore.approvalStore;

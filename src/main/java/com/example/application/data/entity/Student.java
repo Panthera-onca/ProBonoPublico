@@ -2,6 +2,7 @@ package com.example.application.data.entity;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -40,10 +41,7 @@ public class Student extends AbstractEntity {
   @ManyToOne
   private Status status;
 
-  @Override
-  public String toString() {
-    return firstName + " " + lastName;
-  }
+  
 
   public String getFirstName() {
     return firstName;
@@ -67,6 +65,16 @@ public class Student extends AbstractEntity {
 
   public void setStatus(Status status) {
 	    this.status = status;
+	  }
+
+  public void setAuditorium(Optional<Auditorium> findById) {
+	// TODO Auto-generated method stub
+	
+  }
+
+  @Override
+  public String toString() {
+	  return firstName + " " + lastName;
 	  }
 
 

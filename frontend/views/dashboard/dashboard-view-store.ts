@@ -1,4 +1,4 @@
-import { crmStore } from 'Frontend/stores/app-store';
+import { approvalStore } from 'Frontend/stores/app-store';
 import { makeAutoObservable } from 'mobx';
 
 class DashboardViewStore {
@@ -7,11 +7,11 @@ class DashboardViewStore {
   }
 
   get studentCount() {
-    return crmStore.students.length;
+    return approvalStore.students.length;
   }
 
   get auditoriumStats() {
-    const countByAuditorium = crmStore.students.reduce((map, student) => {
+    const countByAuditorium = approvalStore.students.reduce((map, student) => {
       const name = student.auditorium?.name || 'Unknown';
       return map.set(name, (map.get(name) || 0) + 1);
     }, new Map<string, number>());

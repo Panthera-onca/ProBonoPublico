@@ -9,7 +9,7 @@ import {
 import { clearCache } from './cacheable';
 
 import { makeAutoObservable, runInAction } from 'mobx';
-import { crmStore } from './app-store';
+import { approvalStore } from './app-store';
 
 class Message {
   constructor(public text = '', public error = false, public open = false) {}
@@ -79,7 +79,7 @@ export class UiStore {
   setLoggedIn(loggedIn: boolean) {
     this.loggedIn = loggedIn;
     if (loggedIn) {
-      crmStore.initFromServer();
+      approvalStore.initFromServer();
     }
   }
 

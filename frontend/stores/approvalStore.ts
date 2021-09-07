@@ -4,11 +4,11 @@ import Auditorium from 'Frontend/generated/com/example/application/data/entity/A
 import Student from 'Frontend/generated/com/example/application/data/entity/Student';
 import Status from 'Frontend/generated/com/example/application/data/entity/Status';
 import * as endpoint from 'Frontend/generated/CrmEndpoint';
-import CrmDataModel from 'Frontend/generated/com/example/application/data/endpoint/CrmEndpoint/CrmDataModel';
+import ApprovalModel from 'Frontend/generated/com/example/application/data/endpoint/ApprovalEndpoint/ApprovalModel';
 import { cacheable } from './cacheable';
 import { uiStore } from './app-store';
 
-export class CrmStore {
+export class ApprovalStore {
   students: Student[] = [];
   auditoriums: Auditorium[] = [];
   statuses: Status[] = [];
@@ -30,9 +30,9 @@ export class CrmStore {
 
   async initFromServer() {
     const data = await cacheable(
-      endpoint.getCrmData,
-      'crm',
-      CrmDataModel.createEmptyValue()
+      endpoint.getApproval,
+      'approval',
+      ApprovalModel.createEmptyValue()
     );
 
     runInAction(() => {
